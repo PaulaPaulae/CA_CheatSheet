@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Box Sizing Cheat Sheet</title>
+        <link href="style.css" rel="stylesheet">
+
+    </head>
+    <body>
+        <table>
+            <thead>
+                <tr>
+                    <td><h1>box-sizing: content-box</h1>
+                        <h2>sizing = content</h2></td>
+                    <td class="empty"></td>
+                    <td><h1>box-sizing: border-box</h1><h2>sizing = content+padding+border</h2></td>
+                </tr>
+
+            </thead>
+            <tbody>
+                <tr class="parag">
+                    <td>This is the browser default. The width and height we set for the box refer (as the name suggests) only to the content <hr></td>
+                    <td class="empty"></td>
+                    <td>The width and height we set for the box refer to everything: content+border+padding <br><br><hr></td>
+                </tr>
+                <tr>
+                    <td class="code">#boxModel {<br>
+                        <span class="codeBold">box-sizing:content-box;</span><br>
+                        width:330px;<br>
+                        height:330px;<br>
+                        padding:50px<br>
+                        border:50px solid #424242;<br>
+                       }</td>
+                       <td class="empty"></td>
+                       <td class="code">#boxModel {<br>
+                        <span class="codeBold">box-sizing:border-box;</span><br>
+                        width:330px;<br>
+                        height:330px;<br>
+                        padding:50px<br>
+                        border:50px solid #424242;<br>
+                       }</td>
+                </tr>
+                <tr>
+                    <td><strong>Final size of the box= 530x530px</strong></td>
+                    <td class="empty"></td>
+                    <td><strong>Final size of the box= 330x330px</strong></td>
+                </tr>
+                <tr>
+                    <td>
+                    <img src="img/content_box.png" alt="content-box schema" style="width: 265px;">
+                    </td>
+                    <td class="empty"></td>
+                    <td>
+                    <img src="img/border_box.png" alt="border-box schema" style="width: 150px;">
+                    </td>
+                </tr>
+               
+
+            </tbody>
+
+        </table>
+
+    </body>
+    
+</html>
